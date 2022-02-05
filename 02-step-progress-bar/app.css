@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  transform: translateY(40%);
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 34px;
+}
+.progress-list {
+  margin-top: 80px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.progress-list::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  background-color: #999;
+  z-index: -10;
+}
+.progress-bar {
+  position: absolute;
+  height: 6px;
+  width: 0%;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  background-color: #a4009f;
+  z-index: -1;
+  transition: all 0.6s linear;
+}
+.progress-bar.active {
+  background-color: #a4009f;
+}
+.progress-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 100rem;
+  border: 5px solid #999;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.8s linear;
+}
+.progress-item.active {
+  border: 5px solid #a4009f;
+}
+.progress-logo {
+  width: 30px;
+  height: 30px;
+}
+.progress-btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.progress-btn {
+  padding: 0 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #a4009f;
+  transition: all 0.2s linear;
+}
+.progress-btn:disabled {
+  background-color: #999;
+}
