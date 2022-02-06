@@ -1,0 +1,47 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #3d6ef7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out;
+}
+.search.active {
+  width: 300px;
+}
+.search.active .search-input {
+  flex: 1;
+}
+.search-input {
+  width: 50px;
+  padding: 0 20px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-btn ion-icon {
+  font-weight: 600;
+  font-size: 22px;
+}
