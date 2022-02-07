@@ -1,0 +1,45 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  position: relative;
+}
+.split {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  transition: width 1s linear;
+}
+.split-left {
+  background-image: url("https://images.unsplash.com/photo-1530878902700-5ad4f9e4c318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  left: 0;
+}
+.split-right {
+  background-image: url("https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  right: 0;
+}
+.split-heading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 4px 2px #000;
+}
+.container.hover-left .split-left {
+  width: 75%;
+}
+.container.hover-left .split-right {
+  width: 25%;
+}
+.container.hover-right .split-left {
+  width: 25%;
+}
+.container.hover-right .split-right {
+  width: 75%;
+}
