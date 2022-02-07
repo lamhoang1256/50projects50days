@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <audio src="./sounds/sound-board_sounds_applause.mp3" data-sound="applause"></audio>
+    <audio src="./sounds/sound-board_sounds_boo.mp3" data-sound="boo"></audio>
+    <audio src="./sounds/sound-board_sounds_gasp.mp3" data-sound="gasp"></audio>
+    <audio src="./sounds/sound-board_sounds_tada.mp3" data-sound="tada"></audio>
+    <audio src="./sounds/sound-board_sounds_victory.mp3" data-sound="victory"></audio>
+    <audio src="./sounds/sound-board_sounds_wrong.mp3" data-sound="wrong"></audio>
+    <div class="container">
+      <div class="sound-list">
+        <button class="sound-item">applause</button>
+        <button class="sound-item">boo</button>
+        <button class="sound-item">gasp</button>
+        <button class="sound-item">tada</button>
+        <button class="sound-item">victory</button>
+        <button class="sound-item">wrong</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
