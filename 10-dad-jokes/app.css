@@ -1,0 +1,38 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #3d6ef7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  max-width: 800px;
+  padding: 70px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.box-icon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+.box-content {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.box-author {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+.box-btn {
+  display: block;
+  height: 50px;
+  padding: 0 30px;
+  background-color: #3d6ef7;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
