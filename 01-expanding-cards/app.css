@@ -75,7 +75,13 @@ body {
 }
 .card.active {
   flex: 10;
+  filter: grayscale(0);
 }
+
+.card:not(.active) {
+  filter: grayscale(1);
+}
+
 .card-img {
   height: 80vh;
   width: 100%;
